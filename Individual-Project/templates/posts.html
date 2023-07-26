@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/css/posts.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>
+	<h1>posts</h1>
+	{%for post in posts%}
+	<p>{{posts[post]["text"]}}</p>
+	<img src="{{posts[post]['image']}}">
+	</div>
+	{%endfor%}
+
+	<a href="/add_post"><button>add another post</button>
+	<a href="/">back to home page</a>
+
+
+</body>
+</html>
